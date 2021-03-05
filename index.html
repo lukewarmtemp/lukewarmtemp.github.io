@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v10.0'
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
