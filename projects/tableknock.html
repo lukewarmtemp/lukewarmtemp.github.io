@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Programmable Table Knocks</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/slideshow.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<a href="/index.html" class="logo">
+                                <span class="symbol"></span><span class="title">Luke Yang</span>
+                            </a>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/generic.html">Ipsum veroeros</a></li>
+							<li><a href="/generic.html">Tempus etiam</a></li>
+							<li><a href="/generic.html">Consequat dolor</a></li>
+							<li><a href="/elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Programmable Table Knocks</h1>
+                            <h2>May 24, 2021</h2>
+                            <p>Detect knocking patterns and program desired actions</p>
+						  
+							<img src="/images/projects/tableknock01.jpg" style="width:100%">
+                            <br>
+							<br>
+							<p>
+                                As I was thinking about what to do for my next project, I started to reflect on ways in which my day-to-day life could be improved.
+								Since I was working on personal projects constantly, I realized a big part of my workflow was watching tutorials on YouTube
+								while working with my hands. My desk was cluttered with my soldering iron, arduino, wires, and various other tools, meaning that
+								my laptop was often placed on the opposite side of the desk where I was working.
+                            </p>
+							<p>
+                                My solution was to implement a system that would allow me to knock my table in a specific pattern to control my laptop. 
+								By doing this, I am able to remotely trigger commands (such as pressing the spacebar to pause/play YouTube videos)
+								to my laptop on the other side of the desk.
+                            </p>
+                            <p>
+                                The system is implemented using an ESP8266 for wireless communication and an accelerometer to detect the knocks. The IMU data is
+								sent to a webserver and is then accessed by a python script running on the laptop which interprets the knocks and triggers a space key press.
+                            </p>
+                            
+                            <div style="text-align:center">
+                                <h2>Videos</h2>
+								<iframe width="893" height="502" src="https://www.youtube.com/embed/qJi3m9uqzVc" title="Automatic Blinds Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe width="893" height="502" src="https://www.youtube.com/embed/xDad8aHsDBU" title="Pausing YouTube Videos by Knocking on my Table | Project Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/lukeyang01/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/lukewarmtemp" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+            <script src="/assets/js/slideshow.js"></script>
+
+	</body>
+</html>

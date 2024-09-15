@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ostree Native Containers + ROS2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/slideshow.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+                            <a href="/index.html" class="logo">
+                                <span class="symbol"></span><span class="title">Luke Yang</span>
+                            </a>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Ostree Native Containers + ROS2</h1>
+                            <h2>Oct 10, 2023</h2>
+                            <p>
+                                <a href="https://github.com/lukewarmtemp/ros2-fcos-gpio" class="logo">
+                                    <span class="icon brands fa-github"></span><span class="title">   ros2-fedora-coreos</span>
+                                </a>
+                                <br>
+                                <a href="https://github.com/lukewarmtemp/ros2-fcos-gpio" class="logo">
+                                    <span class="icon brands fa-github"></span><span class="title">   ros2-fcos-gpio</span>
+                                </a>
+                            </p>
+						  
+                            <br>
+							<p>
+                                During my 16 month internship and working with rpm-ostree, I learned about ostree native containers. Ostree native containers allow you 
+                                to boot and upgrade your OS from a container image. In other words, the container image is not run as a container, but it changes the host 
+                                system itself. My team (CoreOS) had something called hack days, in which every friday we are able to spend the day learning something new. 
+                                Since my background is in robotics engineering, I capitalized on this opportunity to integrate ostree native containers in a robotics context.
+
+                                Robot Operating System or ROS is an open-source set of software libraries and tools that help you build robot applications.
+                                Configuring ROS from source usually takes upwards of half an hour or longer. Therefore, the idea is to layer ROS on top of an image based OS, 
+                                rebase your system, and run ROS immediately after rebooting. In addition, you can also install and configure the necessary drivers to access 
+                                GPUs, GPIO ports, or other hardware interfaces within the base image. I have tested this and can get ROS running and interfacing with hardware 
+                                within 5 minutes.
+                            </p>
+                            <div style="text-align:center">
+                                <h2>Videos</h2>
+                                <iframe width="893" height="502" src="https://www.youtube.com/embed/0bcx_z3XvNQ" title="Ostree Native Containers + ROS2 Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/lukeyang01/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/lukewarmtemp" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+            <script src="/assets/js/slideshow.js"></script>
+
+	</body>
+</html>
