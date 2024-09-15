@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Deep Learning: anime popularity predictor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/slideshow.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<a href="/index.html" class="logo">
+                                <span class="symbol"></span><span class="title">Luke Yang</span>
+                            </a>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/generic.html">Ipsum veroeros</a></li>
+							<li><a href="/generic.html">Tempus etiam</a></li>
+							<li><a href="/generic.html">Consequat dolor</a></li>
+							<li><a href="/elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Deep Learning: anime popularity predictor</h1>
+                            <h2>Dec 05, 2024</h2>
+                            <p>Predict anime rankings based on metadata, synopsis, or thumbnail</p>
+						  
+							<p>
+                                <a href="https://github.com/NeoLou/Anime-popularity-predictor" class="logo">
+                                    <span class="icon brands fa-github"></span><span class="title">   Anime-popularity-predictor</span>
+                                </a>
+                            </p>
+                            <br>
+							<br>
+							<p>
+                                As part of my introduction to deep learning course at the University of Toronto, my team and I were tasked with thinking of an project that could use
+								deep learning to solve a problem. After some brainstorming on things that interest us, we decided to train a model that could predict the popularity of
+								new and upcoming anime based on its metadata (airtime, genre, etc.), synopsis, or thumbnail. The idea is that animation companies can use this model
+								to determine whether a new anime is worth producing based on limited information.
+                            </p>
+							<p>
+                                The team decided to compare the performance of the model between using metadata, synopsis, and thumbnail as inputs. A standard fully connected neural network
+								was used for metadata, a recurrent neural network for the synopsis, and a convolutional neural network for the thumbnail. The MyAnimeList API was used to gather
+								training, validation, and test data. I personally was responsible for impleneting the recurrent neural network for the synopsis.
+                            </p>
+                            <p>
+                                Our results indicated that all models were not able to accurately predict the popularity of anime. When plotting the predicted results, we found that the model
+								would always predict a ranking close to the average ranking of all the anime in the dataset. It is possible that there is either no correlation between the inputs
+								and the popularity of the anime, or that the model was not complex enough to capture the relationship. This is because the best way the model could minimize the loss
+								was probably by predicting the average ranking.
+                            </p>
+							<p>
+                                Our results indicated that all models were not able to accurately predict the popularity of anime. When plotting the predicted results, we found that the model
+								would always predict a ranking close to the average ranking of all the anime in the dataset. It is possible that there is either no correlation between the inputs
+								and the popularity of the anime, or that the model was not complex enough to capture the relationship. This is because the best way the model could minimize the loss
+								was probably by predicting the average ranking.
+                            </p>
+                        </div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/lukeyang01/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/lukewarmtemp" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+            <script src="/assets/js/slideshow.js"></script>
+
+	</body>
+</html>
