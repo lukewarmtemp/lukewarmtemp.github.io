@@ -15,6 +15,7 @@
 }
 
 body {
+
     margin: 0;
     padding: 20px;
 
@@ -27,18 +28,26 @@ body {
 
     background: #faf8f5;
     color: #333;
+
 }
+
 
 .container {
+
     max-width: 600px;
     margin: auto;
+
 }
 
+
 h1 {
+
     text-align: center;
     font-weight: 500;
     margin-bottom: 25px;
+
 }
+
 
 .search-box {
 
@@ -50,6 +59,7 @@ h1 {
     padding-bottom: 15px;
 
 }
+
 
 input {
 
@@ -67,9 +77,13 @@ input {
 
 }
 
+
 input:focus {
+
     border-color: #b08b57;
+
 }
+
 
 .count {
 
@@ -146,6 +160,17 @@ input:focus {
 }
 
 
+.table-value {
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #b07b00;
+
+}
+
+
 .single-result {
 
     display: block;
@@ -171,6 +196,13 @@ input:focus {
 }
 
 
+.single-result .table-value {
+
+    font-size: 70px;
+
+}
+
+
 .no-result {
 
     text-align: center;
@@ -183,6 +215,7 @@ input:focus {
 
 
 @media(max-width:450px){
+
 
     body {
 
@@ -201,6 +234,13 @@ input:focus {
     .name {
 
         font-size: 16px;
+
+    }
+
+
+    .table-value {
+
+        font-size: 30px;
 
     }
 
@@ -280,8 +320,6 @@ fetch("guest-list.csv")
 
     guests = parseCSV(csv)
 
-        // only show guests with tables
-
         .filter(g =>
             g.name &&
             g.table
@@ -292,7 +330,6 @@ fetch("guest-list.csv")
 
 
 });
-
 
 
 
@@ -316,7 +353,6 @@ function parseCSV(text){
 
 
         let char = text[i];
-
 
 
         if(char === '"'){
@@ -355,9 +391,7 @@ function parseCSV(text){
 
         else {
 
-
             value += char;
-
 
         }
 
@@ -392,7 +426,6 @@ function parseCSV(text){
 
         return {
 
-
             name:
                 obj["Guest Name"],
 
@@ -403,7 +436,6 @@ function parseCSV(text){
 
             group:
                 obj["Party / Group"]
-
 
         };
 
@@ -418,22 +450,17 @@ function parseCSV(text){
 
 
 
-
 // Display guests
 
 function displayGuests(list){
 
 
-
     results.innerHTML = "";
-
 
 
     count.textContent =
 
         `${list.length} guest${list.length !== 1 ? "s" : ""}`;
-
-
 
 
 
@@ -458,10 +485,7 @@ function displayGuests(list){
 
 
 
-
-
     list.forEach(g => {
-
 
 
         const card =
@@ -471,8 +495,6 @@ function displayGuests(list){
 
         card.className =
             "guest-card";
-
-
 
 
 
@@ -487,10 +509,7 @@ function displayGuests(list){
 
 
 
-
-
         card.innerHTML = `
-
 
 
         <div>
@@ -503,7 +522,6 @@ function displayGuests(list){
             </div>
 
 
-
             <div class="group">
 
                 ${g.group || ""}
@@ -511,10 +529,7 @@ function displayGuests(list){
             </div>
 
 
-
         </div>
-
-
 
 
 
@@ -528,13 +543,11 @@ function displayGuests(list){
             </div>
 
 
-
-            <div>
+            <div class="table-value">
 
                 ${g.table}
 
             </div>
-
 
 
         </div>
@@ -552,9 +565,7 @@ function displayGuests(list){
     });
 
 
-
 }
-
 
 
 
@@ -578,8 +589,6 @@ searchInput.addEventListener(
 
 
 
-
-
     if(query === ""){
 
 
@@ -593,12 +602,9 @@ searchInput.addEventListener(
 
 
 
-
-
     const filtered =
 
         guests.filter(g =>
-
 
 
             g.name
@@ -606,7 +612,6 @@ searchInput.addEventListener(
             .toLowerCase()
 
             .includes(query)
-
 
 
         );
@@ -618,7 +623,6 @@ searchInput.addEventListener(
 
 
 });
-
 
 
 </script>
