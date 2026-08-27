@@ -8,16 +8,13 @@
 
 <title>Wedding Seat Finder</title>
 
-
 <style>
 
 * {
     box-sizing: border-box;
 }
 
-
 body {
-
     margin: 0;
     padding: 20px;
 
@@ -30,27 +27,18 @@ body {
 
     background: #faf8f5;
     color: #333;
-
 }
-
 
 .container {
-
     max-width: 600px;
     margin: auto;
-
 }
 
-
 h1 {
-
     text-align: center;
     font-weight: 500;
     margin-bottom: 25px;
-
 }
-
-
 
 .search-box {
 
@@ -62,8 +50,6 @@ h1 {
     padding-bottom: 15px;
 
 }
-
-
 
 input {
 
@@ -81,14 +67,9 @@ input {
 
 }
 
-
 input:focus {
-
     border-color: #b08b57;
-
 }
-
-
 
 .count {
 
@@ -101,11 +82,9 @@ input:focus {
 }
 
 
-
 /* Guest cards */
 
 .guest-card {
-
 
     background: white;
 
@@ -115,20 +94,16 @@ input:focus {
 
     margin-bottom: 12px;
 
-
     display: flex;
 
     justify-content: space-between;
 
     align-items: center;
 
-
     box-shadow:
         0 2px 8px rgba(0,0,0,0.08);
 
-
 }
-
 
 
 .name {
@@ -138,7 +113,6 @@ input:focus {
     font-weight: 600;
 
 }
-
 
 
 .group {
@@ -152,7 +126,6 @@ input:focus {
 }
 
 
-
 .seat {
 
     text-align: center;
@@ -160,7 +133,6 @@ input:focus {
     min-width: 85px;
 
 }
-
 
 
 .table-number {
@@ -174,19 +146,6 @@ input:focus {
 }
 
 
-
-.seat-number {
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-    color: #b07b00;
-
-}
-
-
-
 .single-result {
 
     display: block;
@@ -198,7 +157,6 @@ input:focus {
 }
 
 
-
 .single-result .name {
 
     font-size: 30px;
@@ -206,21 +164,11 @@ input:focus {
 }
 
 
-
 .single-result .group {
 
     font-size: 18px;
 
 }
-
-
-
-.single-result .seat-number {
-
-    font-size: 70px;
-
-}
-
 
 
 .no-result {
@@ -234,9 +182,7 @@ input:focus {
 }
 
 
-
 @media(max-width:450px){
-
 
     body {
 
@@ -258,21 +204,12 @@ input:focus {
 
     }
 
-
-    .seat-number {
-
-        font-size: 26px;
-
-    }
-
 }
-
 
 
 </style>
 
 </head>
-
 
 
 <body>
@@ -284,7 +221,6 @@ input:focus {
 <h1>
     Find Your Seat
 </h1>
-
 
 
 <div class="search-box">
@@ -304,16 +240,13 @@ input:focus {
 </div>
 
 
-
 <div id="count" class="count"></div>
 
 
 <div id="results"></div>
 
 
-
 </div>
-
 
 
 
@@ -321,7 +254,6 @@ input:focus {
 
 
 let guests = [];
-
 
 
 const searchInput =
@@ -337,9 +269,7 @@ const count =
 
 
 
-
 // Load CSV
-
 
 fetch("guest-list.csv")
 
@@ -350,12 +280,11 @@ fetch("guest-list.csv")
 
     guests = parseCSV(csv)
 
-        // only show seated guests
+        // only show guests with tables
 
         .filter(g =>
             g.name &&
-            g.table &&
-            g.seat
+            g.table
         );
 
 
@@ -363,8 +292,6 @@ fetch("guest-list.csv")
 
 
 });
-
-
 
 
 
@@ -474,10 +401,6 @@ function parseCSV(text){
                 obj["Table #"],
 
 
-            seat:
-                obj["Seat #"],
-
-
             group:
                 obj["Party / Group"]
 
@@ -498,7 +421,6 @@ function parseCSV(text){
 
 // Display guests
 
-
 function displayGuests(list){
 
 
@@ -510,6 +432,7 @@ function displayGuests(list){
     count.textContent =
 
         `${list.length} guest${list.length !== 1 ? "s" : ""}`;
+
 
 
 
@@ -536,6 +459,7 @@ function displayGuests(list){
 
 
 
+
     list.forEach(g => {
 
 
@@ -547,6 +471,7 @@ function displayGuests(list){
 
         card.className =
             "guest-card";
+
 
 
 
@@ -563,7 +488,9 @@ function displayGuests(list){
 
 
 
+
         card.innerHTML = `
+
 
 
         <div>
@@ -576,6 +503,7 @@ function displayGuests(list){
             </div>
 
 
+
             <div class="group">
 
                 ${g.group || ""}
@@ -583,7 +511,10 @@ function displayGuests(list){
             </div>
 
 
+
         </div>
+
+
 
 
 
@@ -597,27 +528,13 @@ function displayGuests(list){
             </div>
 
 
+
             <div>
 
                 ${g.table}
 
             </div>
 
-
-
-            <div class="table-number">
-
-                Seat
-
-            </div>
-
-
-
-            <div class="seat-number">
-
-                ${g.seat}
-
-            </div>
 
 
         </div>
@@ -646,7 +563,6 @@ function displayGuests(list){
 
 // Search filtering
 
-
 searchInput.addEventListener(
 "input",
 ()=>{
@@ -659,6 +575,7 @@ searchInput.addEventListener(
         .toLowerCase()
 
         .trim();
+
 
 
 
@@ -676,9 +593,12 @@ searchInput.addEventListener(
 
 
 
+
+
     const filtered =
 
         guests.filter(g =>
+
 
 
             g.name
@@ -686,6 +606,7 @@ searchInput.addEventListener(
             .toLowerCase()
 
             .includes(query)
+
 
 
         );
@@ -701,7 +622,6 @@ searchInput.addEventListener(
 
 
 </script>
-
 
 
 </body>
