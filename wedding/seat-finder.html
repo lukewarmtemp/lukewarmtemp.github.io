@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Seat Finder</title>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+    padding: 20px;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #faf8f5;
+    color: #333;
+
+}
+
+
+.container {
+
+    max-width: 600px;
+    margin: auto;
+
+}
+
+
+h1 {
+
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+
+
+.search-box {
+
+    position: sticky;
+    top: 0;
+
+    background: #faf8f5;
+
+    padding-bottom: 15px;
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    padding: 16px;
+
+    font-size: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+
+}
+
+
+input:focus {
+
+    border-color: #b08b57;
+
+}
+
+
+
+.count {
+
+    text-align: center;
+
+    color: #777;
+
+    margin: 15px 0;
+
+}
+
+
+
+/* Guest cards */
+
+.guest-card {
+
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+.name {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+
+
+.group {
+
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    color: #888;
+
+}
+
+
+
+.seat {
+
+    text-align: center;
+
+    min-width: 85px;
+
+}
+
+
+
+.table-number {
+
+    font-size: 12px;
+
+    color: #888;
+
+    margin-top: 4px;
+
+}
+
+
+
+.seat-number {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #b07b00;
+
+}
+
+
+
+.single-result {
+
+    display: block;
+
+    text-align: center;
+
+    padding: 35px;
+
+}
+
+
+
+.single-result .name {
+
+    font-size: 30px;
+
+}
+
+
+
+.single-result .group {
+
+    font-size: 18px;
+
+}
+
+
+
+.single-result .seat-number {
+
+    font-size: 70px;
+
+}
+
+
+
+.no-result {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+
+}
+
+
+
+@media(max-width:450px){
+
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .guest-card {
+
+        padding: 15px;
+
+    }
+
+
+    .name {
+
+        font-size: 16px;
+
+    }
+
+
+    .seat-number {
+
+        font-size: 26px;
+
+    }
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+    Find Your Seat
+</h1>
+
+
+
+<div class="search-box">
+
+<input
+
+    id="search"
+
+    type="text"
+
+    placeholder="Search your name..."
+
+    autocomplete="off"
+
+/>
+
+</div>
+
+
+
+<div id="count" class="count"></div>
+
+
+<div id="results"></div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+let guests = [];
+
+
+
+const searchInput =
+    document.getElementById("search");
+
+
+const results =
+    document.getElementById("results");
+
+
+const count =
+    document.getElementById("count");
+
+
+
+
+// Load CSV
+
+
+fetch("guest-list.csv")
+
+.then(response => response.text())
+
+.then(csv => {
+
+
+    guests = parseCSV(csv)
+
+        // only show seated guests
+
+        .filter(g =>
+            g.name &&
+            g.table &&
+            g.seat
+        );
+
+
+    displayGuests(guests);
+
+
+});
+
+
+
+
+
+
+
+// CSV parser
+
+function parseCSV(text){
+
+
+    let rows = [];
+
+    let row = [];
+
+    let value = "";
+
+    let quote = false;
+
+
+
+    for(let i = 0; i < text.length; i++){
+
+
+        let char = text[i];
+
+
+
+        if(char === '"'){
+
+            quote = !quote;
+
+        }
+
+
+        else if(char === "," && !quote){
+
+
+            row.push(value);
+
+            value = "";
+
+
+        }
+
+
+        else if(char === "\n" && !quote){
+
+
+            row.push(value);
+
+            rows.push(row);
+
+
+            row = [];
+
+            value = "";
+
+
+        }
+
+
+        else {
+
+
+            value += char;
+
+
+        }
+
+
+    }
+
+
+
+    const headers = rows[4];
+
+
+
+    return rows.slice(5)
+
+    .map(row => {
+
+
+        let obj = {};
+
+
+
+        headers.forEach((header,index)=>{
+
+
+            obj[header.trim()] =
+                (row[index] || "").trim();
+
+
+        });
+
+
+
+        return {
+
+
+            name:
+                obj["Guest Name"],
+
+
+            table:
+                obj["Table #"],
+
+
+            seat:
+                obj["Seat #"],
+
+
+            group:
+                obj["Party / Group"]
+
+
+        };
+
+
+    });
+
+
+}
+
+
+
+
+
+
+
+// Display guests
+
+
+function displayGuests(list){
+
+
+
+    results.innerHTML = "";
+
+
+
+    count.textContent =
+
+        `${list.length} guest${list.length !== 1 ? "s" : ""}`;
+
+
+
+
+    if(list.length === 0){
+
+
+        results.innerHTML = `
+
+        <div class="no-result">
+
+            No guest found
+
+        </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+
+
+
+    list.forEach(g => {
+
+
+
+        const card =
+            document.createElement("div");
+
+
+
+        card.className =
+            "guest-card";
+
+
+
+
+        if(list.length === 1){
+
+            card.classList.add(
+                "single-result"
+            );
+
+        }
+
+
+
+
+
+        card.innerHTML = `
+
+
+        <div>
+
+
+            <div class="name">
+
+                ${g.name}
+
+            </div>
+
+
+            <div class="group">
+
+                ${g.group || ""}
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="seat">
+
+
+            <div class="table-number">
+
+                Table
+
+            </div>
+
+
+            <div>
+
+                ${g.table}
+
+            </div>
+
+
+
+            <div class="table-number">
+
+                Seat
+
+            </div>
+
+
+
+            <div class="seat-number">
+
+                ${g.seat}
+
+            </div>
+
+
+        </div>
+
+
+
+        `;
+
+
+
+        results.appendChild(card);
+
+
+
+    });
+
+
+
+}
+
+
+
+
+
+
+
+// Search filtering
+
+
+searchInput.addEventListener(
+"input",
+()=>{
+
+
+    const query =
+
+        searchInput.value
+
+        .toLowerCase()
+
+        .trim();
+
+
+
+
+    if(query === ""){
+
+
+        displayGuests(guests);
+
+        return;
+
+
+    }
+
+
+
+
+    const filtered =
+
+        guests.filter(g =>
+
+
+            g.name
+
+            .toLowerCase()
+
+            .includes(query)
+
+
+        );
+
+
+
+    displayGuests(filtered);
+
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

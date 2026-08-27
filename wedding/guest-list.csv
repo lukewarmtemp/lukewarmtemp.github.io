@@ -1,0 +1,240 @@
+Guest List,,,,,,,,,,,
+,,,,,,,,,,,
+Keep guests in columns D-H. Edit Table # and Seat # in B-C; clear either field to make that guest unseated. Columns I-L are live helpers.,,,,,,,,,,,
+,,,,,,,,,,,
+Guest #,Table #,Seat #,Guest Name,Allergies,Food Option,Party / Group,Notes,Status,Key,Name Helper,Meal / Allergy Helper
+1,1,8,Tevan Bhatia,,Beef,NYC,,Seated,1-8,Tevan Bhatia,Beef
+2,1,9,Helia Mohammadi,,Beef,NYC,,Seated,1-9,Helia Mohammadi,Beef
+3,1,4,Alex Li,,Beef,NYC,,Seated,1-4,Alex Li,Beef
+4,1,6,Ani Srikanth,,Beef,NYC,,Seated,1-6,Ani Srikanth,Beef
+5,1,5,Kyla Kwan-Liu,"Tree Nuts (walnuts, chestnuts, etc.), Peanuts, Dairy (milk, butter, cheese, yogurt)",Salmon,NYC,,Seated,1-5,Kyla Kwan-Liu,"Salmon | Allergy: Tree Nuts (walnuts, chestnuts, etc.), Peanuts, Dairy (milk, butter, cheese, yogurt)"
+6,1,7,Michael Lumibao,,Salmon,NYC,,Seated,1-7,Michael Lumibao,Salmon
+7,1,2,Jacky Yang,,Beef,NYC,,Seated,1-2,Jacky Yang,Beef
+8,1,3,Kai Sun,,Beef,NYC,,Seated,1-3,Kai Sun,Beef
+9,1,1,Sherman Liu,,Beef,NYC,,Seated,1-1,Sherman Liu,Beef
+10,1,10,Yulin Zhou,,Salmon,NYC,,Seated,1-10,Yulin Zhou,Salmon
+11,2,3,Steven King,Peanut allergy,Salmon,CCF,,Seated,2-3,Steven King,Salmon | Allergy: Peanut allergy
+12,2,2,Jonathan Wang,,Chicken,CCF,,Seated,2-2,Jonathan Wang,Chicken
+13,2,1,Maxwell Zheng,,Salmon,CCF,,Seated,2-1,Maxwell Zheng,Salmon
+14,2,10,Louis Chan,,Chicken,CCF,,Seated,2-10,Louis Chan,Chicken
+15,2,9,Ashley Wong,,Beef,CCF,,Seated,2-9,Ashley Wong,Beef
+16,2,6,Clayton Chan,Peanuts,Salmon,CCF,,Seated,2-6,Clayton Chan,Salmon | Allergy: Peanuts
+17,2,7,Caleb Chan,,Beef,CCF,,Seated,2-7,Caleb Chan,Beef
+18,2,8,Danielle Chan,,Beef,CCF,,Seated,2-8,Danielle Chan,Beef
+19,3,8,Angus Chik,,Beef,Toronto,,Seated,3-8,Angus Chik,Beef
+20,3,9,Angelica Hoang,,Beef,Toronto,,Seated,3-9,Angelica Hoang,Beef
+21,3,1,Grace Mubiala,,Beef,Toronto,,Seated,3-1,Grace Mubiala,Beef
+22,3,10,Monica Li,,Salmon,Toronto,,Seated,3-10,Monica Li,Salmon
+23,3,5,Xiangli Xie,,Salmon,NYU,,Seated,3-5,Xiangli Xie,Salmon
+24,3,6,Bernice Chen,,Salmon,NYU,,Seated,3-6,Bernice Chen,Salmon
+25,3,7,Jonathan Wang,,Beef,NYU,,Seated,3-7,Jonathan Wang,Beef
+26,3,4,Eknoor Chauhan,,Vegetarian,NYU,,Seated,3-4,Eknoor Chauhan,Vegetarian
+27,3,3,Judy Good,,Beef,NYC,,Seated,3-3,Judy Good,Beef
+28,4,6,Chanyong Kim,,Beef,VP,,Seated,4-6,Chanyong Kim,Beef
+29,4,5,Stephen Ma-Pan,,Chicken,VP,,Seated,4-5,Stephen Ma-Pan,Chicken
+30,4,4,Michael Li,,Salmon,VP,,Seated,4-4,Michael Li,Salmon
+31,4,8,Victor Ren,,Beef,VP,,Seated,4-8,Victor Ren,Beef
+32,4,9,Andrew Luk,,Beef,Toronto,,Seated,4-9,Andrew Luk,Beef
+33,4,7,Chris Ho,,Chicken,VP,,Seated,4-7,Chris Ho,Chicken
+34,4,2,Yanning Wang,,Chicken,VP,,Seated,4-2,Yanning Wang,Chicken
+35,4,3,Alisha Wang,,Salmon,VP,,Seated,4-3,Alisha Wang,Salmon
+36,4,10,Remington Wang,,Beef,VP,,Seated,4-10,Remington Wang,Beef
+37,4,1,Jeffrey Wang,,Salmon,VP,,Seated,4-1,Jeffrey Wang,Salmon
+38,5,5,Chris Situ,Peanuts,Salmon,CCF,,Seated,5-5,Chris Situ,Salmon | Allergy: Peanuts
+39,5,6,Cecilia Chan,,Salmon,CCF,,Seated,5-6,Cecilia Chan,Salmon
+40,5,9,Dora Shi,,Beef,CCF,,Seated,5-9,Dora Shi,Beef
+41,5,8,Emily Fan,,Chicken,CCF,,Seated,5-8,Emily Fan,Chicken
+42,5,1,Riley Li,,Beef,CCF,,Seated,5-1,Riley Li,Beef
+43,5,10,Joey Ng,,Chicken,CCF,,Seated,5-10,Joey Ng,Chicken
+44,5,2,Marcus Yip,Peanuts,Beef,CCF,,Seated,5-2,Marcus Yip,Beef | Allergy: Peanuts
+45,5,4,Caleb Ji,,Beef,CCF,,Seated,5-4,Caleb Ji,Beef
+46,5,7,Chloe Ha,,Beef,CCF,,Seated,5-7,Chloe Ha,Beef
+47,5,3,Joshua Chang,,Chicken,CCF,,Seated,5-3,Joshua Chang,Chicken
+48,6,1,Liz So,,Salmon,CCF,,Seated,6-1,Liz So,Salmon
+49,6,2,Alaina Hu,,Beef,CCF,,Seated,6-2,Alaina Hu,Beef
+50,6,3,Ethan Wang,,Beef,CCF,,Seated,6-3,Ethan Wang,Beef
+51,6,10,Annie Wang,,Beef,CCF,,Seated,6-10,Annie Wang,Beef
+52,6,9,John Zhang,,Beef,CCF,,Seated,6-9,John Zhang,Beef
+53,6,8,Luke Yang,,Chicken,CCF,,Seated,6-8,Luke Yang,Chicken
+54,6,7,Neo Lou,,Chicken,CCF,,Seated,6-7,Neo Lou,Chicken
+55,6,6,Naglis Paunksnis,,Salmon,Jordan Family,,Seated,6-6,Naglis Paunksnis,Salmon
+56,6,5,Kastytis Paunksnis,,Salmon,Jordan Family,,Seated,6-5,Kastytis Paunksnis,Salmon
+57,6,4,Mikey Tang,Raw apples/pears/stone fruits,Beef,NYC,,Seated,6-4,Mikey Tang,Beef | Allergy: Raw apples/pears/stone fruits
+58,7,4,Springna Shao,,Beef,VP,,Seated,7-4,Springna Shao,Beef
+59,7,1,Gillian Tsoi,"nuts, seafood",Chicken,VP,,Seated,7-1,Gillian Tsoi,"Chicken | Allergy: nuts, seafood"
+60,7,2,Felix Wang,,Salmon,VP,,Seated,7-2,Felix Wang,Salmon
+61,7,3,Edward Zhuang,,Salmon,VP,,Seated,7-3,Edward Zhuang,Salmon
+62,7,10,Jessica Chen,Nuts,Beef,VP,,Seated,7-10,Jessica Chen,Beef | Allergy: Nuts
+63,7,6,Krishani Kikuranbaran,,Chicken,VP,,Seated,7-6,Krishani Kikuranbaran,Chicken
+64,7,5,Anni Wang,,Beef,VP,,Seated,7-5,Anni Wang,Beef
+65,7,7,Mariluiza De Jesus,,Beef,VP,,Seated,7-7,Mariluiza De Jesus,Beef
+66,7,9,Elle Chen,,Salmon,Toronto,,Seated,7-9,Elle Chen,Salmon
+67,8,1,Danielle Tao,,Salmon,CIT,,Seated,8-1,Danielle Tao,Salmon
+68,8,2,Joy Cho,,Beef,CIT,,Seated,8-2,Joy Cho,Beef
+69,8,3,Rachel Ma,,Salmon,CIT,,Seated,8-3,Rachel Ma,Salmon
+70,8,4,Susan Dong,,Beef,CIT,,Seated,8-4,Susan Dong,Beef
+71,8,5,Christine Liang,,Chicken,CIT,,Seated,8-5,Christine Liang,Chicken
+72,8,6,Charis Yong,,Chicken,CIT,,Seated,8-6,Charis Yong,Chicken
+73,8,7,Taiwo Owalabi,,Chicken,CIT,,Seated,8-7,Taiwo Owalabi,Chicken
+74,8,8,Gloria Cho,,Beef,CIT,,Seated,8-8,Gloria Cho,Beef
+75,8,9,Brianna Zhao,,Chicken,CIT,,Seated,8-9,Brianna Zhao,Chicken
+76,8,10,Belinda Zhao,,Salmon,CIT,,Seated,8-10,Belinda Zhao,Salmon
+77,8,11,Grace Cho,,Beef,CIT,,Seated,8-11,Grace Cho,Beef
+78,9,6,Katryn Mei,Peanuts,Beef,CCF,,Seated,9-6,Katryn Mei,Beef | Allergy: Peanuts
+79,9,7,Deborah Lin,,Chicken,CCF,,Seated,9-7,Deborah Lin,Chicken
+80,9,5,Chloe Cheng,,Chicken,CCF,,Seated,9-5,Chloe Cheng,Chicken
+81,9,4,Vera Zhang,,Salmon,CCF,,Seated,9-4,Vera Zhang,Salmon
+82,9,3,Michelle Wang,,Chicken,CCF,,Seated,9-3,Michelle Wang,Chicken
+83,9,8,Gwen Kwong,,Salmon,CCF,,Seated,9-8,Gwen Kwong,Salmon
+84,9,2,Carmel Tung,Lactose,Salmon,CCF,,Seated,9-2,Carmel Tung,Salmon | Allergy: Lactose
+85,9,1,Angelica Lee,,Chicken,CCF,,Seated,9-1,Angelica Lee,Chicken
+86,9,9,Stacey Li,,Beef,CCF,,Seated,9-9,Stacey Li,Beef
+87,11,1,John Tiamzon,,Beef,CIT,,Seated,11-1,John Tiamzon,Beef
+88,11,2,Bethel Omero,,Beef,CIT,,Seated,11-2,Bethel Omero,Beef
+89,11,3,Kemuel Omero,,Chicken,CIT,,Seated,11-3,Kemuel Omero,Chicken
+90,11,4,Faithjoy De La Pena,,Salmon,CIT,,Seated,11-4,Faithjoy De La Pena,Salmon
+91,11,5,Michael Shito,,Salmon,CIT,,Seated,11-5,Michael Shito,Salmon
+92,11,6,Tim Lau,,Beef,CIT,,Seated,11-6,Tim Lau,Beef
+93,11,7,Vera Lau,,Beef,CIT,,Seated,11-7,Vera Lau,Beef
+94,11,8,Zhengwei Ye,,Beef,CIT,,Seated,11-8,Zhengwei Ye,Beef
+95,11,9,Kris Ho,Cheese,Beef,CIT,,Seated,11-9,Kris Ho,Beef | Allergy: Cheese
+96,12,6,Mer Zhang,,Salmon,CIT,,Seated,12-6,Mer Zhang,Salmon
+97,12,5,Tony Huang,,Beef,CIT,,Seated,12-5,Tony Huang,Beef
+98,12,7,Michelle Zhang,,Beef,CIT,,Seated,12-7,Michelle Zhang,Beef
+99,12,8,Christopher Ta,,Beef,CIT,,Seated,12-8,Christopher Ta,Beef
+100,12,9,Colin Fang,,Chicken,CIT,,Seated,12-9,Colin Fang,Chicken
+101,12,3,Maxwell Dimov,,Beef,CIT,,Seated,12-3,Maxwell Dimov,Beef
+102,12,4,Justin Zhang,,Beef,CIT,,Seated,12-4,Justin Zhang,Beef
+103,12,2,Santiago Munoz,,Chicken,CIT,,Seated,12-2,Santiago Munoz,Chicken
+104,12,1,Lin Zheng,,Salmon,CIT,,Seated,12-1,Lin Zheng,Salmon
+105,14,1,Chengji Liu,,Vegetarian,Cicy Family,,Seated,14-1,Chengji Liu,Vegetarian
+106,14,2,Haixia Liu,,Vegetarian,Cicy Family,,Seated,14-2,Haixia Liu,Vegetarian
+107,14,3,Hewu Luo,,Beef,Cicy Family,,Seated,14-3,Hewu Luo,Beef
+108,14,4,Huiqiong Lü,,Chicken,Cicy Family,,Seated,14-4,Huiqiong Lü,Chicken
+109,14,5,Billy Luo,,Beef,Cicy Family,,Seated,14-5,Billy Luo,Beef
+110,14,6,Lily Luo,,Beef,Cicy Family,,Seated,14-6,Lily Luo,Beef
+111,14,7,Dannie Jin,,Beef,Toronto,,Seated,14-7,Dannie Jin,Beef
+112,14,8,Mengsi Yu,,Beef,Cicy Family,,Seated,14-8,Mengsi Yu,Beef
+113,14,9,Zhen Cai,,Chicken,Cicy Family,,Seated,14-9,Zhen Cai,Chicken
+114,15,1,Ian Brinksman,,Beef,CIT,,Seated,15-1,Ian Brinksman,Beef
+115,15,2,Del Martin,,Salmon,CIT,,Seated,15-2,Del Martin,Salmon
+116,15,3,Yaping Yan,,Beef,Cicy Family,,Seated,15-3,Yaping Yan,Beef
+117,15,4,Jingyi Yan,,Salmon,Cicy Family,,Seated,15-4,Jingyi Yan,Salmon
+118,15,5,Soraya Munoz,,Salmon,CIT,,Seated,15-5,Soraya Munoz,Salmon
+119,15,6,Ester Bardela,Bell Peppers,Beef,CIT,,Seated,15-6,Ester Bardela,Beef | Allergy: Bell Peppers
+120,15,7,Othon Bardela,,Beef,CIT,,Seated,15-7,Othon Bardela,Beef
+121,15,8,Silvia Li,,Beef,CIT,,Seated,15-8,Silvia Li,Beef
+122,15,9,Tony Liang,,Beef,CIT,,Seated,15-9,Tony Liang,Beef
+123,16,7,Chloe Ng,,Salmon,Remnant,,Seated,16-7,Chloe Ng,Salmon
+124,16,8,Claire Xu,,Beef,Remnant,,Seated,16-8,Claire Xu,Beef
+125,16,9,Helen Xiu,Crab,Chicken,Remnant,,Seated,16-9,Helen Xiu,Chicken | Allergy: Crab
+126,16,5,April Wang,all nuts,Beef,Remnant,,Seated,16-5,April Wang,Beef | Allergy: all nuts
+127,16,6,Kelsey Zhu,,Beef,Remnant,,Seated,16-6,Kelsey Zhu,Beef
+128,16,10,Grace Chong,,Salmon,Remnant,,Seated,16-10,Grace Chong,Salmon
+129,16,4,Grace Feng,,Beef,Remnant,,Seated,16-4,Grace Feng,Beef
+130,16,3,Josh Liao,Shrimp,Beef,Remnant,,Seated,16-3,Josh Liao,Beef | Allergy: Shrimp
+131,16,2,Charles Huh,,Beef,Remnant,,Seated,16-2,Charles Huh,Beef
+132,17,1,Melanie Lee,,Chicken,Jordan Family,,Seated,17-1,Melanie Lee,Chicken
+133,17,2,Finn McJunkin,,Kids,Jordan Family,,Seated,17-2,Finn McJunkin,Kids
+134,17,3,Sasha McJunkin,,Kids,Jordan Family,,Seated,17-3,Sasha McJunkin,Kids
+135,17,4,Nora Tran,,Kids,Jordan Family,,Seated,17-4,Nora Tran,Kids
+136,17,9,Franklin Tan,,Kids,Cicy Family,,Seated,17-9,Franklin Tan,Kids
+137,17,8,Nicholas Cai,,Kids,Cicy Family,,Seated,17-8,Nicholas Cai,Kids
+138,17,7,Austin Liu,,Kids - Vegetarian,Cicy Family,,Seated,17-7,Austin Liu,Kids - Vegetarian
+139,17,6,Christine Liu,nuts,Kids - Vegetarian,Cicy Family,,Seated,17-6,Christine Liu,Kids - Vegetarian | Allergy: nuts
+140,18,7,Lin Yang,,Salmon,Cicy Family,,Seated,18-7,Lin Yang,Salmon
+141,18,6,Xiaofei Tan,,Beef,Cicy Family,,Seated,18-6,Xiaofei Tan,Beef
+142,18,3,Meihua Li,,Salmon,Cicy Family,,Seated,18-3,Meihua Li,Salmon
+143,18,4,Pingjin Yang,,Beef,Cicy Family,,Seated,18-4,Pingjin Yang,Beef
+144,18,5,Justin Gu,,Beef,Cicy Family,,Seated,18-5,Justin Gu,Beef
+145,18,8,Megan Gu,,Beef,Cicy Family,,Seated,18-8,Megan Gu,Beef
+146,18,9,Ping Gu,,Salmon,Cicy Family,,Seated,18-9,Ping Gu,Salmon
+147,18,10,Biao Zheng,,Beef,Cicy Family,,Seated,18-10,Biao Zheng,Beef
+148,18,1,Xue Gu,,Beef,Cicy Family,,Seated,18-1,Xue Gu,Beef
+149,19,3,Innkyu Moon,,Chicken,Remnant,,Seated,19-3,Innkyu Moon,Chicken
+150,19,4,Michelle Kim,,Salmon,Remnant,,Seated,19-4,Michelle Kim,Salmon
+151,19,2,Justin Hsieh,,Beef,Remnant,,Seated,19-2,Justin Hsieh,Beef
+152,19,1,Juliana Hong,,Beef,Remnant,,Seated,19-1,Juliana Hong,Beef
+153,19,5,Enju Hwang,,Beef,Remnant,,Seated,19-5,Enju Hwang,Beef
+154,19,6,Gavin Tse,,Beef,Remnant,,Seated,19-6,Gavin Tse,Beef
+155,19,10,Rachel Guen,,Salmon,Remnant,,Seated,19-10,Rachel Guen,Salmon
+156,19,9,Mark Zhuang,,Beef,Remnant,,Seated,19-9,Mark Zhuang,Beef
+157,19,7,Sarah Shin,,Salmon,Remnant,,Seated,19-7,Sarah Shin,Salmon
+158,19,8,Nathan Ro,,Beef,Remnant,,Seated,19-8,Nathan Ro,Beef
+159,20,8,Rachel Wong,,Chicken,Jordan Family,,Seated,20-8,Rachel Wong,Chicken
+160,20,9,Talia Homer,"Dairy, eggs, nuts and sesame",Beef,Jordan Family,,Seated,20-9,Talia Homer,"Beef | Allergy: Dairy, eggs, nuts and sesame"
+161,20,7,Iris Park,,Beef,Jordan Family,,Seated,20-7,Iris Park,Beef
+162,20,6,Auden Park,,Beef,Jordan Family,,Seated,20-6,Auden Park,Beef
+163,20,3,Matthew Ho,,Beef,Jordan Family,,Seated,20-3,Matthew Ho,Beef
+164,20,4,Izzy Ho,,Salmon,Jordan Family,,Seated,20-4,Izzy Ho,Salmon
+165,20,5,Kathryn Chin,,Chicken,Jordan Family,,Seated,20-5,Kathryn Chin,Chicken
+166,21,6,Joyce Wong,,Chicken,Jordan Family,,Seated,21-6,Joyce Wong,Chicken
+167,21,7,David Wong,,Salmon,Jordan Family,,Seated,21-7,David Wong,Salmon
+168,21,5,Grace Niu,,Beef,Jordan Family,,Seated,21-5,Grace Niu,Beef
+169,21,4,Tim Tran,,Salmon,Jordan Family,,Seated,21-4,Tim Tran,Salmon
+170,21,3,Mary Niu,,Beef,Jordan Family,,Seated,21-3,Mary Niu,Beef
+171,21,2,Sam McJunkin,,Chicken,Jordan Family,,Seated,21-2,Sam McJunkin,Chicken
+172,21,10,Helena Ying,,Vegetarian,Jordan Family,,Seated,21-10,Helena Ying,Vegetarian
+173,21,1,Jay Goodelle,,Beef,Jordan Family,,Seated,21-1,Jay Goodelle,Beef
+174,21,9,Calvin Ying,,Beef,Jordan Family,,Seated,21-9,Calvin Ying,Beef
+175,21,8,Derek Ho,,Beef,Jordan Family,,Seated,21-8,Derek Ho,Beef
+176,21,11,Tracy Ho,"Pineapple, kiwi, coriander, bell pepper",Salmon,Jordan Family,,Seated,21-11,Tracy Ho,"Salmon | Allergy: Pineapple, kiwi, coriander, bell pepper"
+177,22,8,Daisy Park,,Salmon,Jordan Family,,Seated,22-8,Daisy Park,Salmon
+178,22,7,Nancy Chin,,Beef,Jordan Family,,Seated,22-7,Nancy Chin,Beef
+179,22,6,Ken Chin,,Beef,Jordan Family,,Seated,22-6,Ken Chin,Beef
+180,22,4,Stephanie Lee,,Salmon,Jordan Family,,Seated,22-4,Stephanie Lee,Salmon
+181,22,5,Steven Lee,,Beef,Jordan Family,,Seated,22-5,Steven Lee,Beef
+182,22,9,Sandra Paunsknis,,Salmon,Jordan Family,,Seated,22-9,Sandra Paunsknis,Salmon
+183,22,10,Mindaugus Paunksnis,,Chicken,Jordan Family,,Seated,22-10,Mindaugus Paunksnis,Chicken
+184,22,2,Yi-an Lee,,Salmon,Jordan Family,,Seated,22-2,Yi-an Lee,Salmon
+185,22,3,Wanli Lee,,Beef,Jordan Family,,Seated,22-3,Wanli Lee,Beef
+186,23,6,Shui Wong,,Beef,Jordan Family,,Seated,23-6,Shui Wong,Beef
+187,23,5,Jim Crehan,,Salmon,Jordan Family,,Seated,23-5,Jim Crehan,Salmon
+188,23,7,Suk Yee Pau,,Chicken,Jordan Family,,Seated,23-7,Suk Yee Pau,Chicken
+189,23,8,David Pau,,Beef,Jordan Family,,Seated,23-8,David Pau,Beef
+190,23,10,Sara Pau,,Beef,Jordan Family,,Seated,23-10,Sara Pau,Beef
+191,23,1,Barrett Marsh,,Beef,Jordan Family,,Seated,23-1,Barrett Marsh,Beef
+192,23,9,Brian Pau,Severe allergy to DAIRY and PEANUTS,Beef,Jordan Family,,Seated,23-9,Brian Pau,Beef | Allergy: Severe allergy to DAIRY and PEANUTS
+193,23,4,Mo Ng,,Salmon,Jordan Family,,Seated,23-4,Mo Ng,Salmon
+194,23,3,Susan Sing,,Beef,Jordan Family,,Seated,23-3,Susan Sing,Beef
+195,24,6,Doris Ting,,Salmon,Jordan Family,,Seated,24-6,Doris Ting,Salmon
+196,24,8,Grace Ying,"No starch, sugar, shrimp, MSG, less oil & salt",Salmon,Jordan Family,,Seated,24-8,Grace Ying,"Salmon | Allergy: No starch, sugar, shrimp, MSG, less oil & salt"
+197,24,7,Tao-Yan Ying,"No MSG, shrimp, less oil & salt",Beef,Jordan Family,,Seated,24-7,Tao-Yan Ying,"Beef | Allergy: No MSG, shrimp, less oil & salt"
+198,24,1,Edward Ho,,Beef,Jordan Family,,Seated,24-1,Edward Ho,Beef
+199,24,2,Christine Ho,,Beef,Jordan Family,,Seated,24-2,Christine Ho,Beef
+200,24,10,Winnie Ting,,Salmon,Jordan Family,,Seated,24-10,Winnie Ting,Salmon
+201,24,9,Veronica Ting,,Salmon,Jordan Family,,Seated,24-9,Veronica Ting,Salmon
+202,24,4,Paul Ting,,Beef,Jordan Family,,Seated,24-4,Paul Ting,Beef
+203,24,5,Christina Ting,,Salmon,Jordan Family,,Seated,24-5,Christina Ting,Salmon
+204,24,3,Alice Ding,,Salmon,Jordan Family,,Seated,24-3,Alice Ding,Salmon
+205,,,Brandon Park,,Chicken,Vendor,,Unseated,,Brandon Park,Chicken
+206,,,Malik Dieleman,,Salmon,Vendor,,Unseated,,Malik Dieleman,Salmon
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
+,,,,,,,,Blank,,,
