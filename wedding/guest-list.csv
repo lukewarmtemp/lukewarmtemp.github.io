@@ -31,15 +31,15 @@ Guest #,Table #,Seat #,Guest Name,Allergies,Food Option,Party / Group,Notes,Stat
 26,3,4,Eknoor Chauhan,,Vegetarian,NYU,,Seated,3-4,Eknoor Chauhan,Vegetarian
 27,3,3,Judy Good,,Beef,NYC,,Seated,3-3,Judy Good,Beef
 28,4,6,Chanyong Kim,,Beef,VP,,Seated,4-6,Chanyong Kim,Beef
-29,4,5,Stephen Ma-Pan,,Chicken,VP,,Seated,4-5,Stephen Ma-Pan,Chicken
-30,4,4,Michael Li,,Salmon,VP,,Seated,4-4,Michael Li,Salmon
-31,4,8,Victor Ren,,Beef,VP,,Seated,4-8,Victor Ren,Beef
-32,4,9,Andrew Luk,,Beef,Toronto,,Seated,4-9,Andrew Luk,Beef
+29,4,9,Stephen Ma-Pan,,Chicken,VP,,Seated,4-9,Stephen Ma-Pan,Chicken
+30,4,8,Michael Li,,Salmon,VP,,Seated,4-8,Michael Li,Salmon
+31,4,10,Victor Ren,,Beef,VP,,Seated,4-10,Victor Ren,Beef
+32,4,1,Andrew Luk,,Beef,Toronto,,Seated,4-1,Andrew Luk,Beef
 33,4,7,Chris Ho,,Chicken,VP,,Seated,4-7,Chris Ho,Chicken
 34,4,2,Yanning Wang,,Chicken,VP,,Seated,4-2,Yanning Wang,Chicken
 35,4,3,Alisha Wang,,Salmon,VP,,Seated,4-3,Alisha Wang,Salmon
-36,4,10,Remington Wang,,Beef,VP,,Seated,4-10,Remington Wang,Beef
-37,4,1,Jeffrey Wang,,Salmon,VP,,Seated,4-1,Jeffrey Wang,Salmon
+36,4,4,Remington Wang,,Beef,VP,,Seated,4-4,Remington Wang,Beef
+37,4,5,Jeffrey Wang,,Salmon,VP,,Seated,4-5,Jeffrey Wang,Salmon
 38,5,5,Chris Situ,Peanuts,Salmon,CCF,,Seated,5-5,Chris Situ,Salmon | Allergy: Peanuts
 39,5,6,Cecilia Chan,,Salmon,CCF,,Seated,5-6,Cecilia Chan,Salmon
 40,5,9,Dora Shi,,Beef,CCF,,Seated,5-9,Dora Shi,Beef
@@ -49,17 +49,17 @@ Guest #,Table #,Seat #,Guest Name,Allergies,Food Option,Party / Group,Notes,Stat
 44,5,2,Marcus Yip,Peanuts,Beef,CCF,,Seated,5-2,Marcus Yip,Beef | Allergy: Peanuts
 45,5,4,Caleb Ji,,Beef,CCF,,Seated,5-4,Caleb Ji,Beef
 46,5,7,Chloe Ha,,Beef,CCF,,Seated,5-7,Chloe Ha,Beef
-47,5,3,Joshua Chang,,Chicken,CCF,,Seated,5-3,Joshua Chang,Chicken
-48,6,1,Liz So,,Salmon,CCF,,Seated,6-1,Liz So,Salmon
-49,6,2,Alaina Hu,,Beef,CCF,,Seated,6-2,Alaina Hu,Beef
-50,6,3,Ethan Wang,,Beef,CCF,,Seated,6-3,Ethan Wang,Beef
-51,6,10,Annie Wang,,Beef,CCF,,Seated,6-10,Annie Wang,Beef
-52,6,9,John Zhang,,Beef,CCF,,Seated,6-9,John Zhang,Beef
-53,6,8,Luke Yang,,Chicken,CCF,,Seated,6-8,Luke Yang,Chicken
-54,6,7,Neo Lou,,Chicken,CCF,,Seated,6-7,Neo Lou,Chicken
-55,6,6,Naglis Paunksnis,,Salmon,Jordan Family,,Seated,6-6,Naglis Paunksnis,Salmon
-56,6,5,Kastytis Paunksnis,,Salmon,Jordan Family,,Seated,6-5,Kastytis Paunksnis,Salmon
-57,6,4,Mikey Tang,Raw apples/pears/stone fruits,Beef,NYC,,Seated,6-4,Mikey Tang,Beef | Allergy: Raw apples/pears/stone fruits
+47,5,3,Daniel Chua,,Chicken,CCF,,Seated,5-3,Daniel Chua,Chicken
+48,6,4,Joshua Chang,,Beef,CCF,,Seated,6-4,Joshua Chang,Beef
+49,6,1,Liz So,,Salmon,CCF,,Seated,6-1,Liz So,Salmon
+50,6,2,Alaina Hu,,Beef,CCF,,Seated,6-2,Alaina Hu,Beef
+51,6,3,Ethan Wang,,Beef,CCF,,Seated,6-3,Ethan Wang,Beef
+52,6,10,Annie Wang,,Beef,CCF,,Seated,6-10,Annie Wang,Beef
+53,6,9,John Zhang,,Beef,CCF,,Seated,6-9,John Zhang,Beef
+54,6,8,Luke Yang,,Chicken,CCF,,Seated,6-8,Luke Yang,Chicken
+55,6,7,Neo Lou,,Chicken,CCF,,Seated,6-7,Neo Lou,Chicken
+56,6,6,Naglis Paunksnis,,Salmon,Jordan Family,,Seated,6-6,Naglis Paunksnis,Salmon
+57,6,5,Kastytis Paunksnis,,Salmon,Jordan Family,,Seated,6-5,Kastytis Paunksnis,Salmon
 58,7,4,Springna Shao,,Beef,VP,,Seated,7-4,Springna Shao,Beef
 59,7,1,Gillian Tsoi,"nuts, seafood",Chicken,VP,,Seated,7-1,Gillian Tsoi,"Chicken | Allergy: nuts, seafood"
 60,7,2,Felix Wang,,Salmon,VP,,Seated,7-2,Felix Wang,Salmon
