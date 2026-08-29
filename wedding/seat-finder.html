@@ -295,6 +295,8 @@ input:focus {
 
 let guests = [];
 
+let loadError = false;
+
 
 const searchInput =
     document.getElementById("search");
@@ -311,9 +313,24 @@ const count =
 
 // Load CSV
 
-fetch("guest-list.csv")
+fetch("guest-list.csv", { cache: "no-store" })
 
-.then(response => response.text())
+.then(response => {
+
+
+    if(!response.ok){
+
+        throw new Error(
+            `Could not load guest-list.csv (${response.status})`
+        );
+
+    }
+
+
+    return response.text();
+
+
+})
 
 .then(csv => {
 
@@ -327,6 +344,14 @@ fetch("guest-list.csv")
 
 
     displayGuests(guests);
+
+
+})
+
+.catch(err => {
+
+
+    showError(err.message);
 
 
 });
@@ -357,7 +382,23 @@ function parseCSV(text){
 
         if(char === '"'){
 
-            quote = !quote;
+
+            // "" inside a quoted field is one literal quote
+
+            if(quote && text[i + 1] === '"'){
+
+                value += '"';
+
+                i++;
+
+            }
+
+            else {
+
+                quote = !quote;
+
+            }
+
 
         }
 
@@ -373,7 +414,16 @@ function parseCSV(text){
         }
 
 
-        else if(char === "\n" && !quote){
+        else if((char === "\n" || char === "\r") && !quote){
+
+
+            // swallow the \n of a \r\n pair
+
+            if(char === "\r" && text[i + 1] === "\n"){
+
+                i++;
+
+            }
 
 
             row.push(value);
@@ -400,11 +450,52 @@ function parseCSV(text){
 
 
 
-    const headers = rows[4];
+    // keep a last line that has no trailing newline
+
+    if(value !== "" || row.length){
+
+
+        row.push(value);
+
+        rows.push(row);
+
+
+    }
 
 
 
-    return rows.slice(5)
+    // Find the header row instead of assuming where it sits,
+    // so extra title/blank rows from the export don't break things.
+
+    const headerIndex = rows.findIndex(r =>
+
+
+        r.some(c => c.trim() === "Guest Name") &&
+
+        r.some(c => c.trim() === "Table #")
+
+
+    );
+
+
+
+    if(headerIndex === -1){
+
+
+        throw new Error(
+            "guest-list.csv has no 'Guest Name' / 'Table #' header row"
+        );
+
+
+    }
+
+
+
+    const headers = rows[headerIndex];
+
+
+
+    return rows.slice(headerIndex + 1)
 
     .map(row => {
 
@@ -441,6 +532,35 @@ function parseCSV(text){
 
 
     });
+
+
+}
+
+
+
+
+
+
+// Error message
+
+function showError(message){
+
+
+    loadError = true;
+
+
+    count.textContent = "";
+
+
+    results.innerHTML = `
+
+    <div class="no-result">
+
+        ${message}
+
+    </div>
+
+    `;
 
 
 }
@@ -577,6 +697,14 @@ function displayGuests(list){
 searchInput.addEventListener(
 "input",
 ()=>{
+
+
+    if(loadError){
+
+        return;
+
+    }
+
 
 
     const query =
